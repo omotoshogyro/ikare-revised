@@ -1,0 +1,31 @@
+.why__us {
+  
+  text-align: center;
+  color: #333333;
+  padding: 20px 50px;
+}
+.why__us > .head {
+  color: #474747;
+  font-weight: 400;
+}
+.why__us > .main__header{
+    color: rgb(8,60,99);
+}
+.whyus__title{
+    font-size: 20px;
+}
+.whyus__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 824px) {
+    .why__us {
+        padding: 20px;
+      }
+}
+ 
