@@ -4,6 +4,7 @@ import "./Blog.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import Article from "../../components/Article/Article";
+import PageLanding from "../../components/PageLanding/PageLanding";
 
 function Blog() {
   const blogposts = [
@@ -80,16 +81,8 @@ function Blog() {
 
   return (
     <div className="blog">
-      <div
-        className="page__landing"
-        style={{
-          backgroundImage: `url(images/appointment.jpg)`,
-        }}
-      >
-        <div className="blog__overlay">
-          <h1 className="page__title">Blog</h1>
-        </div>
-      </div>
+     
+      <PageLanding image='appointment.jpg' title='Blog'/>
 
       <div className="blogposts__section">
         <div className="blogposts__header">

@@ -3,13 +3,14 @@ import "./TeamProfile.css";
 
 function TeamProfile({ picture, name, title }) {
   return (
-    <figure class="doctor__detail">
+    <figure className="team__detail">
       <img src={`images/${picture}`} alt="" />
-      <figcaption>
-        <div className="doctor__info">
-          <h2 className="doctor__name">{name}</h2>
-          <h5 className="doctors__title">{title}</h5>
-        </div>
+      <figcaption className="team__info">
+          <h2 className="team__name">{name}</h2>
+          <h5 className="team__title">{title}</h5>
+          <p className="team__profile">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sunt qui modi, accusamus similique esse laudantium a dolores nihil illo odio voluptates vitae! Consequatur, doloremque cumque. Saepe ratione natus tempora.
+          </p>
       </figcaption>
     </figure>
   );

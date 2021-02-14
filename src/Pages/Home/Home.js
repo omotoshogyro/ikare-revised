@@ -1,6 +1,6 @@
 import React from "react";
 import Landing from "../../components/Landing/Landing";
-import Section from "../../components/Section/Section";
+import Section from "../../components/Sections/Sections";
 import WhyUs from "../../components/WhyChooseUs/WhyUs";
 import './Home.css'
 

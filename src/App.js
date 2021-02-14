@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -14,12 +15,21 @@ import SignIn from "./Pages/SignIn/SignIn";
 
 
 function App() {
+
+
+  const [slide, setSlide] = useState(false)
+
+  const showMenu = (slide) => {
+    setSlide(!slide)
+  }
+
+
   return (
 
     <div className="App">
       <Router>
-        <Overlay />
-        <NavBar />
+        <Overlay slide={slide} showMenu={showMenu} setSlide={setSlide}/>
+        <NavBar slide={slide} showMenu={showMenu}/>
         <Switch>
           <Route exact path="/" render={(props) => <Home />} />
           <Route exact path="/service" render={(props) => <Service /> } />

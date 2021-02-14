@@ -14,24 +14,12 @@
 }
 .center__part > h3{
   font-weight: 400;
-  /* position: relative; */
-
 }
-/* .center__part > h3::after{
- 
-  height: 2px;
-  width: 5%;
-  content: "";
-  top: 0;
-  left: 1em;
-  background-color: red;
-  position: absolute;
-} */
+
 .center__part > h1{
   color: rgb(8,60,99);
 }
 .welcome__word{
-  /* width: 60vw; */
   max-width: 80vw;
   margin-bottom: 10px;
 }
@@ -39,15 +27,12 @@
 .each__section {
   min-height: 50vh;
   background-color: initial;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   justify-content: center;
   padding: 20px 50px;
+  margin: 30px 0px;
 }
 .left__part > img {
   width: 100%;
@@ -65,6 +50,7 @@
   text-transform: uppercase;
   font-size: 12px;
   color: rgba(180, 27, 27, 0.8);
+  margin-bottom: 10px;
 }
 .right__part > h1 {
   font-size: 40px;
@@ -88,14 +74,10 @@ p.section__word {
 @media screen and (max-width: 824px) {
   .each__section {
     grid-template-columns: 1fr;
-    /* grid-row-gap: 0px; */
-    /* margin: 20px; */
     padding: 20px;
   }
   .right__part {
     min-width: 60vw;
-
-    /* justify-self: end; */
   }
   .left__part {
     order: 2;

@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageLanding from "../../components/PageLanding/PageLanding";
 import "./Contact.css";
 
 function Contact() {
   return (
     <div className="contactus">
-      <div
-        className="page__landing"
-        style={{
-          backgroundImage: `url(images/health-service.jpg)`,
-        }}
-      >
-        <h1 className="page__title">Contact Us</h1>
-      </div>
+      
+      <PageLanding image='health-service.jpg' title='Contact us'/>
 
       <div className="contact">
         <h2 className="contactus__description__top">

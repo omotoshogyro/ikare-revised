@@ -3,6 +3,7 @@
   padding: 40px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: rgba(8, 60, 99, 0.247);
   color: #083c63;
   text-align: left;
@@ -10,14 +11,21 @@
 
 .footer__left > img {
   width: 10vw;
+  min-width: 65px;
 }
 .footer__middle > ul > li {
   margin-bottom: 10px;
   text-transform: capitalize;
 }
-
-.subscribe__form > input {
+.subscribe__input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__input > input {
   width: 20vw;
+  min-width: 145px;
+  font-size: 16px;
   height: 30px;
   border: none;
   outline: none;
@@ -26,9 +34,21 @@
 h3.subscribe___header {
   margin-bottom: 10px;
 }
-.subscribe__form > button {
+
+.subscribe__input > button {
+  max-height: 30px;
   border: none;
   background-color: #083c63;
-  padding: 12px 15px;
+  padding: 10px;
   color: white;
+  margin-left: -5px;
+}
+
+
+@media screen and (max-width: 824px){
+  .footer {
+    /* width: 100%; */
+    padding: 20px;
+  }
+  
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import PageLanding from "../../components/PageLanding/PageLanding";
 import "./Service.css";
 
 function Service() {
@@ -43,14 +44,8 @@ function Service() {
 
   return (
     <div className="services">
-      <div
-        className="page__landing"
-        style={{
-          backgroundImage: `url(images/health-service.jpg)`,
-        }}
-      >
-        <h1 className="page__title">What we offer</h1>
-      </div>
+     
+     <PageLanding image='health-service.jpg' title='What we offer'/>
 
       <div className="each__section">
         <div className="right__part">
@@ -84,8 +79,8 @@ function Service() {
             return (
               <div className="service__list">
                 <div className="list__icon">
-                  <img src={`images/icons/${icon}`} alt=""/>
-                  </div>
+                  <img src={`images/icons/${icon}`} alt="" />
+                </div>
                 <h4 className="list__title">{title}</h4>
                 <p className="list__word">{word}</p>
               </div>

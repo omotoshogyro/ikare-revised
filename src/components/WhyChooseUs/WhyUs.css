@@ -1,5 +1,4 @@
 .why__us {
-  
   text-align: center;
   color: #333333;
   padding: 20px 50px;
@@ -8,11 +7,8 @@
   color: #474747;
   font-weight: 400;
 }
-.why__us > .main__header{
-    color: rgb(8,60,99);
-}
-.whyus__title{
-    font-size: 20px;
+.why__us > .main__header {
+  color: rgb(8, 60, 99);
 }
 .whyus__options {
   display: grid;
@@ -22,10 +18,25 @@
   align-items: center;
   margin-top: 30px;
 }
+.whyus__option {
+  margin-bottom: 20px;
+}
+.whyus__icon > img {
+  width: 50px;
+  border-radius: 100%;
+}
+.whyus__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(8, 60, 99);
+}
+.whyus__word {
+  color: #747474;
+  line-height: 1.5em;
+}
 
 @media screen and (max-width: 824px) {
-    .why__us {
-        padding: 20px;
-      }
+  .why__us {
+    padding: 20px;
+  }
 }
- 

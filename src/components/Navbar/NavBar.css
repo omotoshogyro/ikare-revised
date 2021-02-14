@@ -7,13 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
-  /* max-width: 96%; */
   height: 50px;
   text-align: center;
   color: white;
-
   position: fixed;
   top: 0px;
   padding: 20px 40px;
@@ -43,14 +40,15 @@ div ul {
 .navbar__links  ul  {
   display: flex;
   flex: 0.7;
-  text-align: center;
+  /* text-align: center; */
   justify-content: space-between;
-  
-  /* align-items: center; */
 }
 .navbar__links ul >  li {
   margin-right: 25px;
   font-size: 1em;
+}
+.navbar__links ul >  li:last-child,.navbar__links ul >  :nth-child(8) {
+  margin-right: 0px;
 }
 .navbar__links ul >  li a {
   text-decoration: none;
@@ -67,7 +65,7 @@ div ul {
 @media (max-width: 670px) {
 
 
- .navbar__menus, .searchicon{
+ .navbar__menus, .search__icon{
    display: none;
  }
   .hamburger__menu > .line {

@@ -1,9 +1,9 @@
 import React from "react";
-import "./Section.css";
+import "./Sections.css";
 
-function Section() {
+function Sections() {
   return (
-    <div className="section">
+    <div className="sections">
           <div className="welcome__section">
         <div className="center__part">
           <h3>Welcome to iKarely</h3>
@@ -17,6 +17,7 @@ function Section() {
           <button className="eachsection__btn">Read more</button>
         </div>
       </div>
+
       <div className="each__section">
         <div className="left__part">
           <img src="images/easy-access.jpg" alt="" />
@@ -68,8 +69,10 @@ function Section() {
           <button className="eachsection__btn">read more</button>
         </div>
       </div>
+
+      
     </div>
   );
 }
 
-export default Section;
+export default Sections;

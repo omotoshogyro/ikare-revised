@@ -1,21 +1,4 @@
 
-.blog > .page__landing{
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-}
-.blog__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(54, 131, 247, 0.363);
-    padding: 20px 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
 .blogposts__section{
     display: grid;
     justify-content: center;
@@ -25,7 +8,31 @@
 }
 .blogposts__header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+}
+.latest{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.search__box{
+    display: flex;
+    align-items: center;
+}
+.search__box > input{
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    height: 30px;
+    border: 1px solid grey;
+    
+}
+.search__box > button{
+    /* height: 30px; */
+    border: none;
+    padding: 8px 15px;
 }
 
 .blog__posts{
@@ -41,13 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 .paginations > .MuiSvgIcon-root{
     color: white;
     background-color:  rgb(8,60,99);
     padding: 5px;
-    /* font-size: 20px; */
+}
+.paginations > .MuiSvgIcon-root:first-child{
+   margin-right: 15px;
 }
 
 .featuredarticles__section{
@@ -64,7 +72,11 @@
     margin: 20px 0px 50px 0px;
 }
 
-
+@media screen and (max-width: 824px){
+    .blogposts__section,.featuredarticles__section{
+        padding: 20px;
+    }
+}
 @media screen and (max-width: 766px ){
 
     .blog__posts{

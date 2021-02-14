@@ -28,28 +28,42 @@
   display: grid;
   align-items: center;
   justify-self: start;
+  /* justify-content: space-between; */
   flex-direction: column;
   padding: 0px 40px;
   text-align: left;
-  line-height: 4em;
 }
 .word {
   align-self: end;
 }
-.button {
-  align-self: start;
-}
+
 .main__word {
   font-size: 55px;
 }
 .mainword__break {
   color: #083c63;
 }
+.button {
+  align-self: start;
+}
 .button > .getstarted__btn {
+  margin-top: 20px;
   padding: 10px 15px;
   text-transform: uppercase;
   font-size: smaller;
   border: none;
   background-color: rgba(180, 27, 27, 0.8);
   color: white;
+}
+
+@media screen and (max-width: 824px){
+  .contents {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 786px){
+  .main__word {
+    font-size: 40px;
+  }
 }
